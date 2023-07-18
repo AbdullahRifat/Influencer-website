@@ -1,0 +1,208 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+:root{
+    --black-primary : #3A3A3A;
+    --white-primary : #FFF;
+    --pink-primary:#E02C6D;
+    --dark-blue : #0A0826;
+    --gray-50: #787885;
+    --text-gray-900: #18191F;
+    --fs-xl:3.2rem;
+    --fs-l:2.2rem;
+    --fs-m:1.6rem;
+    --fs-n:1rem;
+    --fs-sm:0.8rem;
+}
+
+
+
+/* shared styles */
+h2{
+    font-size: var(--fs-xl);
+font-weight: 700;
+}
+.popular-card h2{
+    font-size: var(--fs-l);
+font-weight: 700;
+}
+p{
+    font-size: var(--fs-n);
+    color: var(--text-gray-900);
+}
+.logo{
+    font-size: var(--fs-xl);
+    font-weight: 700;
+}
+.max-width{
+    max-width:  1180px;
+    margin: auto;
+}
+body{
+    margin: 0;
+    padding: 10px;
+    min-width: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+main{
+
+}
+.btn-primary{
+    text-align: center;
+    padding: 10px 25px;
+    background: #E02C6D;
+    color: var(--white-primary);
+    border: none;
+    border-radius: 41px;
+}
+/* Head */
+ nav{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin: auto;
+
+}
+nav ul{
+    display:flex;
+    list-style: none;
+    
+}
+nav ul li{
+   
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* banner */
+.banner{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.banner-cover{
+
+    background-image: url(./images/Circle-design.svg);
+    background-size: cover;
+
+    
+}
+
+/*  service-brands*/
+.service-brands{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1.8rem;
+    place-items: center;
+    margin:5rem auto;
+
+}
+
+/* popular collection */
+.popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left:auto;
+    row-gap: 2.8rem;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3rem;
+   
+
+
+}
+
+.popular-card{
+    margin: auto;
+      width:16rem;
+      
+      padding: 20px;
+      border-radius:8px ;
+      border: none;
+      box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
+     
+    
+}
+.popular-card img{
+    width:100%;
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+   
+    :root{
+        --fs-xl:2.2rem;
+    --fs-l:1.8rem;
+    --fs-m:1.2rem;
+    --fs-n:1rem;
+    --fs-sm:0.6rem;
+    }
+   
+    ul{
+        font-size: var(--fs-sm);
+        font-weight: 700;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+       
+      
+
+    }
+    nav ul{
+        
+        justify-content: center;
+        align-items: center;
+        margin:10px auto;
+        
+    }
+   
+    
+    .banner-img{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        gap: 30px;
+        
+     
+        
+    }
+
+    .service-brands{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-wrap: wrap;
+       
+    }
+   
+    .popular-collection{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+    }
+    .popular-card img{
+    width: 100%; 
+    margin: auto;
+    display: block;
+   
+    }
+    
+}
